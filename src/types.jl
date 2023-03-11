@@ -1,6 +1,5 @@
 using ConstructionBase: constructorof
 using EquationsOfState: Parameters, EquationOfState
-using Functors: @functor
 using StructEquality: @struct_hash_equal_isequal_isapprox
 
 export Murnaghan,
@@ -255,18 +254,6 @@ end
         return new(v0, b0, b′0, e0)
     end
 end
-
-@functor Murnaghan1st
-@functor Murnaghan2nd
-@functor BirchMurnaghan2nd
-@functor BirchMurnaghan3rd
-@functor BirchMurnaghan4th
-@functor PoirierTarantola2nd
-@functor PoirierTarantola3rd
-@functor PoirierTarantola4th
-@functor Vinet
-@functor AntonSchmidt
-@functor Holzapfel
 
 function (::Type{T})(args...) where {T<:Parameters}
     E = Base.promote_typeof(args...)
