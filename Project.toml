@@ -3,6 +3,9 @@ uuid = "6f256da5-bf51-47e5-be7a-d1b13c30faeb"
 authors = ["singularitti <singularitti@outlook.com> and contributors"]
 version = "1.0.0-DEV"
 
+[deps]
+StructEquality = "6ec83bb0-ed9f-11e9-3b4c-2b04cb4e219c"
+
 [compat]
 julia = "1"
 
