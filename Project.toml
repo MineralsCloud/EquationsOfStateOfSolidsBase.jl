@@ -9,6 +9,7 @@ EquationsOfState = "0438fec6-b81c-52d9-9651-d286848f50a8"
 StructEquality = "6ec83bb0-ed9f-11e9-3b4c-2b04cb4e219c"
 
 [compat]
+StructEquality = "2"
 julia = "1"
 
 [extras]
